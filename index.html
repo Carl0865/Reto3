@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de la persona usuaria</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <main class="contenedor">
+    <section class="tarjeta-formulario" aria-labelledby="titulo-formulario">
+      <div class="encabezado">
+        <span class="etiqueta">CREA TU PERFIL</span>
+        <h1 id="titulo-formulario">Registro de la persona Usuaria</h1>
+        <p>Completa tus datos y cuéntanos un poco sobre tus intereses.</p>
+      </div>
+
+      <form action="#" method="post">
+        <div class="fila-campos">
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" autocomplete="given-name" required>
+          </div>
+          <div class="campo">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" autocomplete="family-name" required>
+          </div>
+        </div>
+
+        <div class="campo">
+          <label for="correo">Correo Electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="nombre@ejemplo.com" autocomplete="email" required>
+        </div>
+
+        <div class="campo">
+          <label for="contrasena">Contraseña</label>
+          <input type="password" id="contrasena" name="contrasena" placeholder="Crea una contraseña" autocomplete="new-password" minlength="8" required>
+          <small>Utiliza al menos 8 caracteres.</small>
+        </div>
+
+        <div class="campo">
+          <label for="descripcion">Cuéntanos sobre ti</label>
+          <textarea id="descripcion" name="descripcion" rows="4" placeholder="Escribe una breve descripción sobre ti..." maxlength="300"></textarea>
+        </div>
+
+        <fieldset class="intereses">
+          <legend>¿Qué temas te interesan?</legend>
+          <label class="opcion"><input type="checkbox" name="intereses" value="tecnologia"> <span>Tecnología</span></label>
+          <label class="opcion"><input type="checkbox" name="intereses" value="arte"> <span>Arte</span></label>
+          <label class="opcion"><input type="checkbox" name="intereses" value="deporte"> <span>Deporte</span></label>
+        </fieldset>
+
+        <button type="submit" class="boton-registro">Registrarse</button>
+        <p class="nota-privacidad">Tus datos se muestran únicamente como ejemplo para esta práctica.</p>
+      </form>
+    </section>
+    <footer>Práctica de HTML y CSS · Formulario de registro</footer>
+  </main>
+</body>
+</html>
